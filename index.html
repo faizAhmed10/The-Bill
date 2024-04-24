@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing system by Faiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">The Bill</h1>
+      <div class="info">
+        <input class="info-inp" type="text" placeholder="Name..." />
+        <input class="info-inp" type="text" placeholder="Ph.no..." />
+        <input class="info-inp" type="date" placeholder="Date..." />
+        <button id="info-OK">OK</button>
+        <div class="header-links">
+          <a class="links" href="#">Database</a>
+          <a class="links" href="#">Bills</a>
+          <a class="links" href="#">Sale</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bill-sheet">
+        <div class="row-head">
+          <p class="invisible">a</p>
+          <p id="sl-no-head" class="absolute">Sl.no</p>
+          <p id="items-head" class="absolute">Items</p>
+          <p id="price-head" class="absolute">Price</p>
+          <p id="no-items-head" class="absolute">Quantity</p>
+          <p id="total-head" class="absolute">Total</p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div class="rows">
+          <p class="sl-no" id="sl-10" value="10"></p>
+          <div class="input-fields">
+            <input type="text" class="item-name" />
+            <input type="text" class="price" />
+            <input type="text" class="no-items" />
+          </div>
+          <p class="total"></p>
+        </div>
+        <div id="add-rows"></div>
+      </div>
+      <button id="calculate-btn">Calculate</button>
+      <button id="add-btn">Add more rows</button>
+      <div class="summary">
+        <h3>Bill Summary</h3>
+        <div class="cust-det center">
+            <div class="name-div flex">
+                <p class="name-hard marg title">Name :</p>
+                <p id="name-dyn"></p>
+            </div>           
+            <div class="ph-no flex ">
+                <p class="ph-hard marg title">Ph-no :</p>
+                <p id="ph-dyn"></p>
+            </div>
+            <div class="date flex title">
+                <p class="date-hard marg title">Date :</p>
+                <p id="date-dyn"></p>
+            </div>
+        </div>
+        <div class="gross flex">
+          <p class="gross-hard">Gross Total :</p>
+          <p id="gross-dyn"></p>
+        </div>
+        <div class="net flex">
+          <p class="net-hard">Net Total :</p>
+          <p id="net-dyn"></p>
+        </div>
+        <div class="points flex">
+          <p class="points-hard">Points :</p>
+          <p id="points-dyn"></p>
+        </div>
+        <table>
+          <thead>
+            <th>Sl.no</th>
+            <th>Items</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+        <button id="close-btn">Close</button>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
